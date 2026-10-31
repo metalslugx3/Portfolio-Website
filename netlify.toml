@@ -1,0 +1,37 @@
+# Netlify configuration for the showcase site.
+# Plain static files: no build step, publish the folder as-is.
+
+[build]
+  publish = "."
+  command = ""
+
+# Always re-check the project list, so new projects show up right after a deploy.
+[[headers]]
+  for = "/projects.json"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Ruffle's engine files have content hashes in their names, so they can be cached for a year.
+[[headers]]
+  for = "/assets/ruffle/*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/ruffle/core.ruffle.*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Serve Flash files with their proper type.
+[[headers]]
+  for = "/*.swf"
+  [headers.values]
+    Content-Type = "application/x-shockwave-flash"
+
+# Basic security headers for every page.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,0 +1,113 @@
+{
+  "site": {
+    "title": "Emmanuel Diaz",
+    "tagline": "Flash games, web toys and other experiments.",
+    "author": "Your Name",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "top-down-arpg",
+      "title": "Top-Down ARPG",
+      "description": "A top-down action RPG: explore, fight enemies and level up.",
+      "file": "https://top-down-arpg.netlify.app/",
+      "type": "html",
+      "tags": [
+        "action rpg",
+        "top-down",
+        "game"
+      ],
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "mega-man-nes-phaser",
+      "title": "Mega Man (NES Remake)",
+      "description": "A remake of the NES Mega Man platformer, built with Phaser.",
+      "file": "https://mega-man-nes-phaser.netlify.app/",
+      "type": "html",
+      "tags": [
+        "platformer",
+        "nes remake",
+        "phaser",
+        "game"
+      ],
+      "width": 256,
+      "height": 240
+    },
+    {
+      "id": "mario-nes-phaser",
+      "title": "Super Mario (NES Remake)",
+      "description": "A remake of the NES Super Mario platformer, built with Phaser.",
+      "file": "https://mario-nes-phaser.netlify.app/",
+      "type": "html",
+      "tags": [
+        "platformer",
+        "nes remake",
+        "phaser",
+        "game"
+      ],
+      "width": 256,
+      "height": 240
+    },
+    {
+      "id": "belt-diverter",
+      "title": "Belt Diverter",
+      "description": "Route packages down the right conveyor lines before they pile up.",
+      "file": "https://belt-diverter.netlify.app/",
+      "type": "html",
+      "tags": [
+        "warehouse",
+        "game"
+      ],
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "belt-picker",
+      "title": "Belt Picker",
+      "description": "Pick the right items off a moving conveyor belt.",
+      "file": "https://belt-picker.netlify.app/",
+      "type": "html",
+      "tags": [
+        "warehouse",
+        "game"
+      ],
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "warehouse-delivery-driver",
+      "title": "Warehouse Delivery Driver",
+      "description": "Drive the delivery route and get every order where it needs to go.",
+      "file": "https://warehouse-delivery-driver.netlify.app/",
+      "type": "html",
+      "tags": [
+        "warehouse",
+        "driving",
+        "game"
+      ],
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "air-hockey-local-coop",
+      "title": "Air Hockey (Local Co-op)",
+      "description": "Two-player air hockey on one screen.",
+      "file": "https://air-hockey-local-coop.netlify.app/",
+      "type": "html",
+      "tags": [
+        "co-op",
+        "2 players",
+        "game"
+      ],
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}

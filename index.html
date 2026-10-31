@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emmanuel Diaz</title>
+<link rel="stylesheet" href="assets/style.css">
+<!-- Ruffle 0.7.1: Flash Player emulator (WebAssembly), self-hosted in assets/ruffle. -->
+<script src="assets/ruffle/ruffle.js"></script>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <header class="side-head">
+      <h1 class="site-title"><a href="#" id="site-title">Emmanuel Diaz</a></h1>
+      <p class="tagline" id="tagline"></p>
+    </header>
+    <div class="side-tools">
+      <input class="search" id="search" type="search" placeholder="Search projects…" aria-label="Search projects">
+      <div class="chips" id="type-chips" role="group" aria-label="Filter by type"></div>
+    </div>
+    <nav class="project-list" id="project-list" aria-label="Projects"></nav>
+    <footer class="side-foot">
+      <div class="header-links" id="header-links"></div>
+      <div id="footer"></div>
+    </footer>
+  </aside>
+
+  <main class="viewer" id="viewer">
+    <section class="welcome" id="welcome">
+      <div>
+        <p class="welcome-kicker">Select a project</p>
+        <h2 id="welcome-title">Pick something from the list to play it here.</h2>
+        <p class="muted" id="welcome-count"></p>
+      </div>
+    </section>
+
+    <section class="project" id="project" hidden>
+      <div class="project-head">
+        <button class="btn back" id="back" type="button">← Projects</button>
+        <div class="project-title">
+          <h2 id="title"></h2>
+          <div class="meta" id="meta"></div>
+        </div>
+        <div class="actions">
+          <a class="btn" id="open-raw" target="_blank" rel="noopener" hidden>Open file</a>
+          <button class="btn primary" id="fullscreen" type="button">Fullscreen</button>
+        </div>
+      </div>
+      <div class="stage-area" id="stage-area">
+        <div class="stage" id="stage"></div>
+      </div>
+      <div class="project-info">
+        <p id="description"></p>
+        <p id="controls" hidden></p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>
