@@ -123,7 +123,11 @@ function show(p) {
   raw.hidden = !hasRaw;
   if (hasRaw) {
     raw.href = p.file;
-    raw.textContent = p.type === 'swf' ? 'Download .swf' : /^https?:\/\//.test(p.file) ? 'Open in new tab' : 'Open file';
+    const external = /^https?:\/\//.test(p.file);
+    raw.textContent = p.type === 'swf' ? 'Download .swf'
+      : external && /\.netlify\.app$/.test(new URL(p.file).hostname) ? 'Open on Netlify ↗'
+      : external ? 'Open in new tab ↗' : 'Open file';
+    raw.title = external ? p.file : '';
   }
   mount(p);
   $('viewer').scrollTop = 0;
